@@ -12,9 +12,8 @@ func main() {
 		str := strings.TrimSpace(os.Args[1])
 		space := 32
 
-		prev := int(str[0])
-
 		if len(str) > 0 {
+			prev := int(str[0])
 			count = 1
 			for _, val := range str {
 				if int(val) == space && prev != space {
